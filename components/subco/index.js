@@ -83,7 +83,7 @@ export default function SubCo({ alias }) {
                   .flatMap((o) => (!o.isMain ? o : []))
                   .map((res, index) => {
                     return (
-                      <Link href={`/alias/${res._id}`}>
+                      <Link href={`/alias/${res._id}`} key={index}>
                         <Box
                           border="1px solid #6e6eb5"
                           width="255px"
@@ -103,7 +103,7 @@ export default function SubCo({ alias }) {
                                 }`
                               }
                               w="100%"
-                              alt="news"
+                              alt={res.title}
                               h={"150px"}
                             />
                           </Box>

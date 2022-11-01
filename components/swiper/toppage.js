@@ -36,12 +36,13 @@ export default function TopSwiper({ banners }) {
             })
             .map((res, index) => {
               return (
-                <SwiperSlide>
+                <SwiperSlide key={index}>
                   <Box>
                     <Image
                       w={"100%"}
                       src={`http://192.168.103.23:8000/api/v1/${res.image}`}
                       h={{ base: "285px", md: "600px" }}
+                      alt="آتیه خواهان"
                     />
                   </Box>
                 </SwiperSlide>

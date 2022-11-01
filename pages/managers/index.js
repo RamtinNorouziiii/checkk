@@ -73,6 +73,7 @@ export default function ManagersPage({ props }) {
                 w={{ base: "100%", md: "100%", lg: "400px" }}
                 h={"400px"}
                 //  h={{ base: "100%", sm: "400px", lg: "500px" }}
+                alt={"آتیه خواهان"}
               />
             </Flex>
             <Stack spacing={{ base: 6, md: 10 }}>
@@ -169,6 +170,7 @@ export default function ManagersPage({ props }) {
                           ? `http://192.168.103.23:8000/api/v1/${modirAmel.img}`
                           : "/assets/user.png"
                       }
+                      alt={modirAmel.name}
                     />
                   </Box>
                   <Box mt={5}>
@@ -205,6 +207,7 @@ export default function ManagersPage({ props }) {
                               ? `http://192.168.103.23:8000/api/v1/${res.img}`
                               : "/assets/user.png"
                           }
+                          alt={Aza.name}
                         />
                       </Box>
                       <Box mt={5}>

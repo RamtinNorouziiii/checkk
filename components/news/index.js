@@ -76,7 +76,7 @@ export default function NewsSection({ news }) {
                   })
                   .map((res, index) => {
                     return (
-                      <SwiperSlide>
+                      <SwiperSlide key={index}>
                         <Link href={`/news/${res._id}`}>
                           <Box
                             h={{ base: 380, lg: 450 }}
@@ -96,7 +96,7 @@ export default function NewsSection({ news }) {
                                   }`
                                 }
                                 w="100%"
-                                alt="news"
+                                alt={res.title}
                                 h={{ base: "85px", md: "150px" }}
                               />
                             </Box>

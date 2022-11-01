@@ -82,7 +82,7 @@ export default function ShareHolders({ props }) {
                       })
                       .map((res, index) => {
                         return (
-                          <Tr>
+                          <Tr key={index}>
                             <Td fontSize="20px"> {res.title}</Td>
                             <Td fontSize="20px"> {res.percent} % </Td>
                           </Tr>

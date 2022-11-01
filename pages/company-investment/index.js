@@ -39,7 +39,7 @@ export default function CompanyInv({ props }) {
                 {props &&
                   props.map((res, index) => {
                     return (
-                      <ListItem color="#003f04" fontSize={"2xl"}>
+                      <ListItem key={index} color="#003f04" fontSize={"2xl"}>
                         {res.title}{" "}
                       </ListItem>
                     );

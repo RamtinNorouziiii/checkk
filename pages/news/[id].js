@@ -32,7 +32,7 @@ export default function NewsPage() {
             </Text>
             <Text whiteSpace="pre-line" textAlign="justify" color={"gray.500"}>
               orem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
+              industry. Lorem Ipsum has been the industrys standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book. It has
               survived not only five centuries, but also the leap into
@@ -54,6 +54,7 @@ export default function NewsPage() {
               cursor="pointer"
               p={1}
               style={{ border: "3px solid #9ca1a9" }}
+              alt={"news"}
             />
           </Box>
         </Box>

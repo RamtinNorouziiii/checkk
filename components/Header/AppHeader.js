@@ -103,7 +103,7 @@ export default function AppHeaderComponent() {
           >
             <Link href="/">
               <Box width="290px">
-                <Image src={navTop === 0 ? Nav1 : Nav2} />
+                <Image alt="آتیه خواهان" src={navTop === 0 ? Nav1 : Nav2} />
               </Box>
             </Link>
           </Box>
@@ -132,7 +132,7 @@ const DesktopNav = ({ data }) => {
   const popoverContentBgColor = useColorModeValue("white", "gray.800");
 
   return (
-    <Stack textAlign={"center"} m={"auto"} direction={"row"} spacing={4}>
+    <Stack textAlign={"right"} m={"auto"} direction={"row"} spacing={4}>
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.title}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
@@ -259,6 +259,7 @@ const DesktopSubNav = (mainData) => {
                                   lineHeight: 2,
                                 }}
                                 href={`/alias/${res1._id}`}
+                                key={index1}
                               >
                                 <Text
                                   _hover={{ color: "pink.400", bg: "pink.50" }}

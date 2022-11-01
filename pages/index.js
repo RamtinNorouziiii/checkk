@@ -7,7 +7,6 @@ import { instance } from "../utils/axios";
 export default function Home({ props }) {
   return (
     <Box className="App" bg={"#c7c5c5"}>
-      <AppBanner />
       <AppContent props={props} />
     </Box>
   );

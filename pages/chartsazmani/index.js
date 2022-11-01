@@ -11,6 +11,7 @@ export default function ChartSazmani({ props }) {
           src={
             props && `http://192.168.103.23:8000/api/v1/${props && props.image}`
           }
+          alt="آتیه خواهان"
         />
       </Box>
     </Box>
