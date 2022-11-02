@@ -9,7 +9,7 @@ export default function DefaultLayout({ children }) {
     <>
       <AppHeaderComponent />
       <main className="App"> {children} </main>
-      <FooterComp />
+      {/* <FooterComp /> */}
     </>
   );
 }

@@ -1,19 +1,19 @@
 module.exports = {
   apps : [{
-    script: 'npm start ',
+    script: 'npm start',
+
   }],
 
   deploy : {
     production : {
-      user : 'root',
-      host : '192.168.103.23',
+      user : 'SSH_USERNAME',
+      host : 'SSH_HOSTMACHINE',
       ref  : 'origin/master',
-      repo : 'https://github.com/RamtinNorouziiii/checkk',
-      path : '/etc/nginx/react',
+      repo : 'GIT_REPOSITORY',
+      path : 'DESTINATION_PATH',
       'pre-deploy-local': '',
-      'post-deploy' : ' source ~/.nvm/nvm.sh &&  npm install && npm run build && pm2 reload ecosystem.config.js --env production',
-      'pre-setup': '',
-      'ssh-options': 'ForwardAgent=yes'
+      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production',
+      'pre-setup': ''
     }
   }
 };
